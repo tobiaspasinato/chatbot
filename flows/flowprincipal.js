@@ -14,6 +14,7 @@ const flowPrincipal = bot.addKeyword('asd').addAnswer(
         ' ',
         'Que es lo que compartimos todos los dias? (escribir solo la palabra)',
         ' ',
+        //adsd
         'Para salir mande "off"',
     ],
     {capture:true, delay : 2000}, 
