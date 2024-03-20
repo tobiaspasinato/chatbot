@@ -1,4 +1,5 @@
 import bot from "@bot-whatsapp/bot";
+import flow_sobre_mi from "/Users/midlesus/Desktop/prog/0800WEB/chatbot/flows/flow-sobre-mi.js";
 
 const flowPrincipal = bot.addKeyword('asd').addAnswer(
     [
@@ -10,13 +11,15 @@ const flowPrincipal = bot.addKeyword('asd').addAnswer(
         'Para salir mande "cancel',
     ],
     {capture:true, delay : 2000}, 
-    async (ctx,{flowDynamic}) => {
+    async (ctx,{flowDynamic, gotoFlow, endFlow}) => {
         if(ctx.body.toLowerCase() == "sobre mi"){
             //await gotoFlow(...)
-            return flowDynamic('Dijiste "sobre mi"')
-        }
-        if(ctx.body.toLowerCase() == "relicario"){
+            // return flowDynamic('Dijiste "sobre mi"')
+            await gotoFlow(flow_sobre_mi)
+        } else if(ctx.body.toLowerCase() == "relicario"){
             return flowDynamic('Te amo mi amor 💖')
+        } else {
+            return flowDynamic('No tengo ese comando definido')
         }
         //if(ctx.body.toLowerCase() == "cancel"){
         //
