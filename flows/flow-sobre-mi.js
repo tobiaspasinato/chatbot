@@ -7,6 +7,7 @@ const flow_sobre_mi = bot.addKeyword("sobre mi").addAnswer(
         'Para volver al menu principal escribi "back"',
         'Para dejar de hablar escribi "off"'
     ],
+    {capture: true},
     async(ctx,[gotoFlow, endFlow]) => {
         if(ctx.body.toLowerCase() == 'back'){
             return await gotoFlow(flowPrincipal)
