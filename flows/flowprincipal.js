@@ -5,16 +5,10 @@ const flowPrincipal = bot.addKeyword('asd').addAnswer(
     [
         'Hola estas comunicandote con el esclado personal de tobi',
         'Digo digo, el bot personal de tobi. En que puedo ayudarte?',
-        ' ',
         'Para pedir mas información sobre mi mande "sobre mi"',
-        ' ',
         'Para saber como ser feliz mande "ser feliz"',
-        ' ',
         'Fran pone "secreto"',
-        ' ',
         'Que es lo que compartimos todos los dias? (escribir solo la palabra)',
-        ' ',
-        //adsd
         'Para salir mande "off"',
     ],
     {capture:true, delay : 2000}, 
