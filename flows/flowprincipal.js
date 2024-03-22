@@ -1,6 +1,6 @@
 import bot from "@bot-whatsapp/bot";
 import flow_sobre_mi from "/Users/midlesus/Desktop/prog/0800WEB/chatbot/flows/flow-sobre-mi.js";
-import flowTomarDatos from "/Users/midlesus/Desktop/prog/0800WEB/chatbot/flows/flowprincipal.js"
+import flowTomarDatos from "/Users/midlesus/Desktop/prog/0800WEB/chatbot/flows/flowTomarDatos.js";
 
 const flowPrincipal = bot.addKeyword('asd').addAnswer(
     [
