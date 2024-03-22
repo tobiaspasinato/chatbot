@@ -1,5 +1,5 @@
 import bot from "@bot-whatsapp/bot"
-import flowPrincipal from "/Users/midlesus/Desktop/prog/0800WEB/chatbot/flows/flowprincipal.js";
+import flowPrincipal from "./flowprincipal.js";
 
 const flow_sobre_mi = bot.addKeyword("bot").addAnswer(
     [

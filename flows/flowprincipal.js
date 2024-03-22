@@ -1,6 +1,6 @@
 import bot from "@bot-whatsapp/bot";
-import flow_sobre_mi from "/Users/midlesus/Desktop/prog/0800WEB/chatbot/flows/flow-sobre-mi.js";
-import flowTomarDatos from "/Users/midlesus/Desktop/prog/0800WEB/chatbot/flows/flowTomarDatos.js";
+import flow_sobre_mi from "./flow-sobre-mi.js";
+import flowTomarDatos from "./flowTomarDatos.js";
 import { url } from "@ffmpeg-installer/ffmpeg";
 
 const flowPrincipal = bot.addKeyword('bot').addAnswer(
