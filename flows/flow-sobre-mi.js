@@ -1,7 +1,7 @@
 import bot from "@bot-whatsapp/bot"
 import flowPrincipal from "/Users/midlesus/Desktop/prog/0800WEB/chatbot/flows/flowprincipal.js";
 
-const flow_sobre_mi = bot.addKeyword("sobre mi").addAnswer(
+const flow_sobre_mi = bot.addKeyword("bot").addAnswer(
     [
         'texto sobre mi que me dio paja hacer',
         'Para volver al menu principal escribi "back"',

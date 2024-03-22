@@ -12,23 +12,28 @@ function validateInput(input) {
     return null;
 }
 
-let nombre;
-let numero;
-
-const flowTomarDatos = bot.addKeyword("asd2").addAnswer(
+const flowTomarDatos = bot.addKeyword("bot")
+.addAnswer(
     'Buenas, para continuar le pido porfavor que escriba su nombre',
     {capture: true},
-    async(ctx,{gotoFlow, endFlow, flowDinamic}) => {
+    async(ctx,{state}) => {
         if(validateInput(ctx.body.toLowerCase())){
-            nombre = ctx.body;
-            console.log(nombre)
-            numero = ctx.from;
-            console.log(numero)
-            return await gotoFlow(flowPrincipal)
-        } else {
-            flowDinamic('Escribiste mal tu nombre, que la fuerza te acompañe')
-            return endFlow()
+            console.log(ctx.body)
+            await state.update({nombre: ctx.body})
         }
     }
+).addAnswer(
+    'Y su numero de telefono, Cual es?',
+    {capture: true},
+    async(ctx,{state}) => {
+        if(validateInput(ctx.body.toLowerCase())){
+            console.log(ctx.body)
+            await state.update({numero: ctx.body})
+        }
+    }
+).addAnswer(
+    'Gracias por los datos.',
+    {capture: true},
+    async({gotoFlow}) => {return gotoFlow(flowPrincipal)}
 )
 export default flowTomarDatos
