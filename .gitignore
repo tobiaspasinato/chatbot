@@ -1,6 +1,6 @@
-nodemodules/
 key.json
 bot*
 .env
 *.log
 *.png
+node_modules
