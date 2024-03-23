@@ -3,7 +3,7 @@ import flow_sobre_mi from "/Users/midlesus/Desktop/prog/0800WEB/chatbot/flows/fl
 import flowTomarDatos from "/Users/midlesus/Desktop/prog/0800WEB/chatbot/flows/flowTomarDatos.js";
 import { url } from "@ffmpeg-installer/ffmpeg";
 
-const flowPrincipal = bot.addKeyword('bot').addAnswer(
+const flowPrincipal = bot.addKeyword('asd').addAnswer(
     [
         'Hola estas comunicandote con el esclavo personal de tobi',
         'Digo digo, el bot personal de tobi. En que puedo ayudarte?',
