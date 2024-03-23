@@ -15,8 +15,8 @@ const main = async () => {
 const adapterDB = new MockAdapter();
 const adapterFlow = bot.createFlow([
     //flowname + ,
-    flowTomarDatos,
     flowPrincipal,
+    flowTomarDatos,
     flow_sobre_mi,
 ]);
 const adapterProvider = bot.createProvider(BaileysProvider);
