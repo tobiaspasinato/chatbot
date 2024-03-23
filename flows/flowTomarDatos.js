@@ -12,7 +12,7 @@ function validateInput(input) {
     return null;
 }
 
-const flowTomarDatos = bot.addKeyword("bot")
+const flowTomarDatos = bot.addKeyword("asd")
 .addAnswer(
     'Buenas, para continuar le pido porfavor que escriba su nombre',
     {capture: true},
