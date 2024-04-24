@@ -3,7 +3,7 @@ import flowPrincipal from "./flowprincipal.js";
 
 const flow_sobre_mi = bot.addKeyword("bot").addAnswer(
     [
-        'texto sobre mi que me dio paja hacer',
+        'texto sobre mi ejemplo',
         'Para volver al menu principal escribi "back"',
         'Para dejar de hablar escribi "off"'
     ],
